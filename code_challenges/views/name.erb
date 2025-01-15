@@ -1,0 +1,17 @@
+<p><%= @user.capitalize %></p>
+<p><%= @email %></p>
+<p>
+  <% @interests.each do |interest| %>
+    <% if interest == @interests.last %>
+      <span><%= interest %></span>
+    <% else %>
+      <span><%= interest %>, </span>
+    <% end %>
+  <% end %>
+</p>
+
+<% other_users.each do |user| %>
+  <p><a href="/<%= user %>"><%= user.capitalize %></a></p>
+<% end %>
+
+<p><a href="/users">All users</a></p>

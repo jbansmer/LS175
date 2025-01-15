@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dynamic Directories!</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <ol>
+      <% @entries.each do |file| %>
+        <li>
+        <%= file %>
+        </li>
+      <% end %>
+    </ol>
+    <p><a href="/ascending">Sort ascending!</a></p>
+    <p><a href="/">Randomize!</a></p>
+  </body>
+</html>
